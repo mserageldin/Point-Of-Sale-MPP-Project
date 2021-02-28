@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="526.0" prefWidth="584.0" styleClass="background"   xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.CreateAutorController">
+   <children>
+      <Button layoutX="199.0" layoutY="425.0" mnemonicParsing="false" onAction="#handleSubmit" prefHeight="25.0" prefWidth="113.0" text="Submit" textOverrun="CLIP" AnchorPane.bottomAnchor="70.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></Button>
+      <Button fx:id="btnCancel" layoutX="326.0" layoutY="425.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="25.0" prefWidth="120.0" text="Cancel" AnchorPane.bottomAnchor="70.0" AnchorPane.rightAnchor="138.0" />
+      <Label layoutX="20.0" layoutY="374.0" prefHeight="21.0" prefWidth="96.0" text="BIO" />
+      <TextField fx:id="bioField" layoutX="199.0" layoutY="363.0" />
+      <TextField fx:id="phoneField" layoutX="199.0" layoutY="303.0" />
+      <Label layoutX="25.0" layoutY="308.0" prefHeight="17.0" prefWidth="236.0" text="Phone" />
+      <Label layoutX="34.0" layoutY="261.0" text="Zip" />
+      <TextField fx:id="zipField" layoutX="199.0" layoutY="261.0" />
+      <Label layoutX="25.0" layoutY="48.0" text="First Name" />
+      <Label layoutX="26.0" layoutY="103.0" text="Last Name" />
+      <Label layoutX="31.0" layoutY="132.0" text="Street" />
+      <Label layoutX="34.0" layoutY="229.0" text="State" />
+      <TextField fx:id="firstNameField" layoutX="199.0" layoutY="43.0" />
+      <TextField fx:id="lastNameField" layoutX="199.0" layoutY="87.0" />
+      <TextField fx:id="streetField" layoutX="199.0" layoutY="127.0" />
+      <TextField fx:id="cityField" layoutX="199.0" layoutY="168.0" prefHeight="21.0" prefWidth="187.0" />
+      <TextField fx:id="stateField" layoutX="199.0" layoutY="213.0" />
+      <Label layoutX="38.0" layoutY="173.0" text="City" />
+   </children>
+</AnchorPane>

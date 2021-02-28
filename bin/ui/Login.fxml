@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="346.0" prefWidth="667.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.LoginController">
+   <children>
+      <ImageView fx:id="imagev" fitHeight="148.0" fitWidth="187.0" layoutX="21.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="233.0" layoutY="134.0" text="User Name" />
+      <Label layoutX="244.0" layoutY="177.0" text="Password" />
+      <Button fx:id="butLogin" layoutX="421.0" layoutY="216.0" mnemonicParsing="false" onAction="#Login_ClickEvent" prefHeight="31.0" prefWidth="124.0" text="Login" />
+      <Label contentDisplay="CENTER" layoutX="21.0" layoutY="14.0" prefHeight="98.0" prefWidth="595.0" text="Library Management System" textFill="#3b0eab">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUser" layoutX="358.0" layoutY="119.0" />
+      <PasswordField fx:id="txtPWD" layoutX="358.0" layoutY="172.0" />
+   </children>
+</AnchorPane>

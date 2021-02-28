@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.LandingPageController">
+   <children>
+      <ImageView fx:id="imagev" fitHeight="769.0" fitWidth="268.0" layoutX="755.0" pickOnBounds="true" preserveRatio="true" />
+      <SplitPane dividerPositions="0.2172211350293542" layoutX="3.0" layoutY="1.0" prefHeight="769.0" prefWidth="1024.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="767.0" prefWidth="126.0">
+               <children>
+                  <Button fx:id="addNewLibraryMember" layoutX="20.0" layoutY="64.0" mnemonicParsing="false" onAction="#addNewLibraryMember" prefHeight="0.0" prefWidth="178.0" text="Add Member" />
+                  <Button fx:id="checkoutBook" layoutX="23.0" layoutY="419.0" mnemonicParsing="false" onAction="#checkoutBook" prefHeight="0.0" prefWidth="178.0" text="Checkout a book" />
+                  <Button fx:id="addBook" layoutX="23.0" layoutY="294.0" mnemonicParsing="false" onAction="#addBook" prefHeight="0.0" prefWidth="178.0" text="Add book" />
+                  <Button fx:id="addCopyOfAnExistingBook" layoutX="23.0" layoutY="375.0" mnemonicParsing="false" onAction="#addCopyOfAnExistingBook" prefHeight="0.0" prefWidth="178.0" text="Add copy of an existing book" />
+                  <Button fx:id="editMembersButton" layoutX="23.0" layoutY="103.0" mnemonicParsing="false" onAction="#editMembers" prefHeight="0.0" prefWidth="178.0" text="Members List" />
+                  <Button fx:id="bntBookList" layoutX="23.0" layoutY="336.0" mnemonicParsing="false" onAction="#BookListEvent" prefHeight="0.0" prefWidth="178.0" text="Book List" />
+                  <Label id="roleLabel" fx:id="roleLabel" layoutX="6.0" layoutY="8.0" prefHeight="38.0" prefWidth="202.0" text="Role" textFill="#2213bf">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="bntBooKDueDate" layoutX="17.0" layoutY="492.0" mnemonicParsing="false" onAction="#BookDueDate_ClickEvent" prefHeight="0.0" prefWidth="178.0" text="BooK Due Date" />
+                  <Button fx:id="btnBookStatistics" layoutX="17.0" layoutY="533.0" mnemonicParsing="false" onAction="#btnMemberBooks" prefHeight="0.0" prefWidth="178.0" text="Member Books" />
+                  <Button fx:id="btnMembersStatistics" layoutX="17.0" layoutY="579.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="178.0" text="Members Statistics" />
+                  <Button fx:id="btnUserChangepassword" layoutX="23.0" layoutY="185.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="178.0" text="User Change password" />
+                  <Button fx:id="bntAddUsers" layoutX="23.0" layoutY="143.0" mnemonicParsing="false" onAction="#addNewUser" prefHeight="0.0" prefWidth="178.0" text="Add Users" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="715.0" prefWidth="648.0" styleClass="bodybg" stylesheets="@LandingPage.css">
+               <children>
+                  <Label layoutX="23.0" layoutY="33.0" text="Maharishi International University" textFill="#8fd4ff">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="241.0" layoutY="114.0" text="MPP Project" textFill="#8fd4ff">
+                     <font>
+                        <Font size="54.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="382.0" prefWidth="519.0" style="-fx-background-color: white;" styleClass="background" stylesheets="@../application/DarkTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.CreateMemberController">
+   <children>
+      <Button layoutX="167.0" layoutY="325.0" mnemonicParsing="false" onAction="#handleSubmit" prefHeight="25.0" prefWidth="113.0" text="Submit" textOverrun="CLIP" AnchorPane.bottomAnchor="26.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></Button>
+      <Button fx:id="btnCancel" layoutX="300.0" layoutY="325.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="25.0" prefWidth="120.0" text="Cancel" AnchorPane.bottomAnchor="26.0" AnchorPane.rightAnchor="99.0" />
+      <TextField fx:id="cityField" layoutX="185.0" layoutY="167.0" />
+      <TextField fx:id="stateField" layoutX="185.0" layoutY="205.0" />
+      <TextField fx:id="zipField" layoutX="185.0" layoutY="243.0" />
+      <TextField fx:id="phoneField" layoutX="185.0" layoutY="281.0" />
+      <TextField fx:id="firstNameField" layoutX="186.0" layoutY="52.0" />
+      <TextField fx:id="lastNameField" layoutX="186.0" layoutY="90.0" />
+      <TextField fx:id="streetField" layoutX="186.0" layoutY="128.0" />
+      <TextField fx:id="memberIdField" layoutX="186.0" layoutY="14.0" />
+      <Label layoutX="40.0" layoutY="91.0" text="Last Name" />
+      <Label layoutX="40.0" layoutY="129.0" text="Street" />
+      <Label layoutX="40.0" layoutY="178.0" text="City" />
+      <Label layoutX="40.0" layoutY="216.0" text="State" />
+      <Label layoutX="40.0" layoutY="254.0" text="Zip" />
+      <Label layoutX="40.0" layoutY="292.0" prefHeight="17.0" prefWidth="236.0" text="Phone" />
+      <Label layoutX="40.0" layoutY="61.0" text="First Name" />
+      <Label layoutX="40.0" layoutY="23.0" prefHeight="17.0" prefWidth="239.0" text="Member ID" />
+   </children>
+</AnchorPane>
