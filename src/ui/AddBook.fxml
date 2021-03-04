@@ -1,37 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.scene.control.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="780.0" prefWidth="860.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.AddBookController">
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.AddBookController">
    <children>
-      <Label layoutX="14.0" layoutY="14.0" text="Add Book">
+      <Label layoutX="14.0" layoutY="14.0" text="Add Item">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="85.0" layoutY="67.0" text="ISBN">
+      <Label layoutX="85.0" layoutY="67.0" text="Item ID">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <Label layoutX="85.0" layoutY="112.0" text="Title">
+      <Label layoutX="85.0" layoutY="112.0" text="Name">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="28.0" layoutY="163.0" text="Max Checkout">
+      <Label layoutX="60.0" layoutY="163.0" text="Description">
          <font>
             <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="46.0" layoutY="214.0" text="#Copies">
-         <font>
-            <Font size="15.0" />
          </font>
       </Label>
       <TextField fx:id="ISBN" layoutX="148.0" layoutY="67.0" />
@@ -42,39 +38,20 @@
             <Font size="15.0" />
          </font>
       </Button>
-      <Button fx:id="addAuthor" layoutX="633.0" layoutY="455.0" mnemonicParsing="false" onAction="#AddAuthorEvent" prefHeight="31.0" prefWidth="114.0" text="add Author" />
+      <Button fx:id="addAuthor" layoutX="318.0" layoutY="208.0" mnemonicParsing="false" onAction="#AddAuthorEvent" prefHeight="31.0" prefWidth="114.0" text="add Item" />
       <TextField fx:id="copieField" layoutX="149.0" layoutY="211.0" />
-      <Label layoutX="15.0" layoutY="263.0" text="Authors">
-         <font>
-            <Font size="33.0" />
-         </font></Label>
-      <TextField fx:id="firstName" layoutX="138.0" layoutY="326.0" />
-      <TextField fx:id="lastName" layoutX="138.0" layoutY="366.0" />
-      <TextField fx:id="telephone" layoutX="138.0" layoutY="412.0" />
-      <Label layoutX="46.0" layoutY="325.0" text="First name" />
-      <Label layoutX="53.0" layoutY="365.0" text="Last Name" />
-      <Label layoutX="53.0" layoutY="406.0" text="Phone" />
-      <Label layoutX="58.0" layoutY="449.0" text="BIO" />
-      <TextField fx:id="bio" layoutX="138.0" layoutY="455.0" />
-      <Label layoutX="349.0" layoutY="325.0" text="Street" />
-      <Label layoutX="349.0" layoutY="371.0" text="City" />
-      <Label layoutX="349.0" layoutY="423.0" text="State" />
-      <Label layoutX="349.0" layoutY="461.0" text="Zip" />
-      <TextField fx:id="streetField" layoutX="408.0" layoutY="320.0" />
-      <TextField fx:id="cityField" layoutX="408.0" layoutY="361.0" />
-      <TextField fx:id="stateField" layoutX="408.0" layoutY="412.0" />
-      <TextField fx:id="zipField" layoutX="408.0" layoutY="455.0" />
-      <TableView fx:id="table" layoutX="58.0" layoutY="495.0" prefHeight="200.0" prefWidth="711.0">
+      <TableView fx:id="table" layoutX="58.0" layoutY="495.0" prefHeight="200.0" prefWidth="711.0" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="300.0">
         <columns>
-          <TableColumn fx:id="colFirstName" prefWidth="104.0" text="First Name" />
-          <TableColumn fx:id="colLastName" minWidth="6.0" prefWidth="98.0" text="Last Name" />
-            <TableColumn fx:id="colTelephone" prefWidth="66.0" text="phone" visible="false" />
-            <TableColumn fx:id="colBIO" prefWidth="130.0" text="BIO" />
-            <TableColumn fx:id="colStreet" prefWidth="88.0" text="Street" />
-            <TableColumn fx:id="colCity" prefWidth="95.0" text="City" />
-            <TableColumn fx:id="colState" prefWidth="99.0" text="State" />
-            <TableColumn fx:id="colZip" prefWidth="96.0" text="ZIP" />
+          <TableColumn fx:id="colFirstName" prefWidth="104.0" text="Item ID" />
+          <TableColumn fx:id="colLastName" minWidth="6.0" prefWidth="98.0" text="Name" />
+            <TableColumn fx:id="colBIO" prefWidth="130.0" text="Description" />
+            <TableColumn fx:id="colStreet" prefWidth="88.0" text="Price" />
         </columns>
       </TableView>
+      <Label layoutX="86.0" layoutY="214.0" text="Price ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
